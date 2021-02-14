@@ -298,6 +298,15 @@ module.exports = {
 ```
 /*.js
 ```
+### Criando Rotas
+- Instale a biblioteca `react-router-dom`
+```
+$ yarn add react-router-dom
+```
+- Instale a biblioteca `@types/react-router-dom` como dependência de desenvolvimento
+```
+$ yarn add @types/react-router-dom -D
+```
 ---
 ## Padrões de Projeto
 
@@ -327,8 +336,19 @@ module.exports = {
 - [web-vitals](https://yarnpkg.com/package/web-vitals)
 
 #### Dependências de Desenvolvimento
--
-
+- [@types/react-router-dom](https://yarnpkg.com/package/@types/react-router-dom)
+- [@typescript-eslint/eslint-plugin](https://yarnpkg.com/package/@typescript-eslint/eslint-plugin)
+- [@typescript-eslint/parser](https://yarnpkg.com/package/@typescript-eslint/parser)
+- [eslint](https://yarnpkg.com/package/eslint)
+- [eslint-config-airbnb](https://yarnpkg.com/package/eslint-config-airbnb)
+- [eslint-config-prettier](https://yarnpkg.com/package/eslint-config-prettier)
+- [eslint-import-resolver-typescript](https://yarnpkg.com/package/eslint-import-resolver-typescript)
+- [eslint-plugin-import](https://yarnpkg.com/package/eslint-plugin-import)
+- [eslint-plugin-jsx-a11y](https://yarnpkg.com/package/eslint-plugin-jsx-a11y)
+- [eslint-plugin-prettier](https://yarnpkg.com/package/eslint-plugin-prettier)
+- [eslint-plugin-react](https://yarnpkg.com/package/eslint-plugin-react)
+- [eslint-plugin-react-hooks](https://yarnpkg.com/package/eslint-plugin-react-hooks)
+- [prettier](https://yarnpkg.com/package/prettier)
 ---
 
 ## Como executar
