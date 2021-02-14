@@ -297,6 +297,16 @@ module.exports = {
 /*.js
 ```
 ---
+## Padrões de Projeto
+
+#### Introdução
+- [Padrões de projeto com ESLint, Prettier e EditorConfig](docs/Padr%C3%B5es%20de%20projeto%20com%20ESLint%2C%20Prettier%20e%20EditorConfig.pdf)
+#### Ferramentas para padronização de código
+- [EditorConfig](docs/EditorConfig.pdf)
+- [ESLint](docs/ESLint.pdf)
+- [Prettier](docs/Prettier.pdf)
+
+---
 
 ## Tecnologias utilizadas
 
