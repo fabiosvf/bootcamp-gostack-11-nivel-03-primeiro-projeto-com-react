@@ -210,6 +210,8 @@ $ yarn add eslint-import-resolver-typescript -D
     }
   }
 ```
+
+#### Configurando o Prettier
 - Desinstale a extensão `Prettier - Code Formatter` caso a mesma esteja instalada
 - Instale as seguintes bibliotecas como dependências de desenvolvimento:
 ```
