@@ -336,6 +336,23 @@ $ yarn add polished
 ```
 $ yarn add react-icons
 ```
+### Conectando a API
+- Instale a biblioteca `axios`
+```
+$ yarn add axios
+```
+- Abra o arquivo `.eslintrc.json` na raiz do projeto, localize a sessão `rules` e adicione o seguinte trecho de código:
+  - O parâmetro definido em `explicit-function-return-type` é responsável por desabilitar a necessidade de declaração de tipos em `arrow functions` utilizadas dentro do código html
+  - Já o parâmetro `camelcase` serve para permitir declarar variáveis com o caracter _ underline no nome
+```
+"@typescript-eslint/explicit-function-return-type": [
+       "error",
+       {
+         "allowExpressions": true
+       }
+     ],
+"camelcase": "off"
+```
 ---
 ## Padrões de Projeto
 
@@ -358,6 +375,7 @@ $ yarn add react-icons
 - [@types/node](https://yarnpkg.com/package/@types/node)
 - [@types/react](https://yarnpkg.com/package/@types/react)
 - [@types/react-dom](https://yarnpkg.com/package/@types/react-dom)
+- [axios](https://yarnpkg.com/package/axios)
 - [polished](https://yarnpkg.com/package/polished)
 - [react](https://yarnpkg.com/package/react)
 - [react-dom](https://yarnpkg.com/package/react-dom)
