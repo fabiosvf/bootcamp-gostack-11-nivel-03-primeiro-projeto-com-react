@@ -312,7 +312,7 @@ $ yarn add @types/react-router-dom -D
 ```
 $ yarn add styled-components
 ```
-- Instala a biblioteca `@types/styled-components` como dependência de desenvolvimento
+- Instale a biblioteca `@types/styled-components` como dependência de desenvolvimento
 ```
 $ yarn add @types/styled-components -D
 ```
@@ -326,6 +326,15 @@ $ yarn add @types/styled-components -D
   - Esse parâmetro desativa a obrigatoriedade em definir um `export default`. Esse recurso é importante quando trabalhamos com `styled-components` pois podemos exportar vários estilos em um único arquivo onde nenhum, em específico, será `default`.
 ```
 "import/prefer-default-export": "off"
+```
+### Estilizando Dashboard
+- Instale a biblioteca `polished`
+```
+$ yarn add polished
+```
+- Instale a biblioteca `react-icons`
+```
+$ yarn add react-icons
 ```
 ---
 ## Padrões de Projeto
@@ -349,8 +358,10 @@ $ yarn add @types/styled-components -D
 - [@types/node](https://yarnpkg.com/package/@types/node)
 - [@types/react](https://yarnpkg.com/package/@types/react)
 - [@types/react-dom](https://yarnpkg.com/package/@types/react-dom)
+- [polished](https://yarnpkg.com/package/polished)
 - [react](https://yarnpkg.com/package/react)
 - [react-dom](https://yarnpkg.com/package/react-dom)
+- [react-icons](https://yarnpkg.com/package/react-icons)
 - [react-scripts](https://yarnpkg.com/package/react-scripts)
 - [styled-components](https://yarnpkg.com/package/styled-components)
 - [typescript](https://yarnpkg.com/package/typescript)
