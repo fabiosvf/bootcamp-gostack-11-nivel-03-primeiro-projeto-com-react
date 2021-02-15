@@ -307,6 +307,26 @@ $ yarn add react-router-dom
 ```
 $ yarn add @types/react-router-dom -D
 ```
+### Utilizando Styled Components
+- Instale a biblioteca `styled-components`
+```
+$ yarn add styled-components
+```
+- Instala a biblioteca `@types/styled-components` como dependência de desenvolvimento
+```
+$ yarn add @types/styled-components -D
+```
+- Instale a extensão `vcode-styled-components` no Visual Studio Code
+- Acesse o site [Google Fonts](https://fonts.google.com/), localize a fonte `Roboto`, selecione os estilos `Regular 400` e `Bold 700`, em seguida, na lateral direita, copie o link gerado automaticamente e cole dentro da tag `head` abaixo da tag `title` dentro do arquivo `public/index.html`
+```
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+```
+- Abra o arquivo `.eslintrc.json` na raiz do projeto, localize a sessão `rules` e adicione o parâmetro abaixo:
+  - Esse parâmetro desativa a obrigatoriedade em definir um `export default`. Esse recurso é importante quando trabalhamos com `styled-components` pois podemos exportar vários estilos em um único arquivo onde nenhum, em específico, será `default`.
+```
+"import/prefer-default-export": "off"
+```
 ---
 ## Padrões de Projeto
 
@@ -332,11 +352,13 @@ $ yarn add @types/react-router-dom -D
 - [react](https://yarnpkg.com/package/react)
 - [react-dom](https://yarnpkg.com/package/react-dom)
 - [react-scripts](https://yarnpkg.com/package/react-scripts)
+- [styled-components](https://yarnpkg.com/package/styled-components)
 - [typescript](https://yarnpkg.com/package/typescript)
 - [web-vitals](https://yarnpkg.com/package/web-vitals)
 
 #### Dependências de Desenvolvimento
 - [@types/react-router-dom](https://yarnpkg.com/package/@types/react-router-dom)
+- [@types/styled-components](https://yarnpkg.com/package/@types/styled-components)
 - [@typescript-eslint/eslint-plugin](https://yarnpkg.com/package/@typescript-eslint/eslint-plugin)
 - [@typescript-eslint/parser](https://yarnpkg.com/package/@typescript-eslint/parser)
 - [eslint](https://yarnpkg.com/package/eslint)
