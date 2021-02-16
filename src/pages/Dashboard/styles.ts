@@ -72,7 +72,7 @@ export const Repositories = styled.div`
     border-radius: 5px;
     width: 100%;
     padding: 24px;
-    display: block;
+    //display: block;
     text-decoration: none;
 
     display: flex;
