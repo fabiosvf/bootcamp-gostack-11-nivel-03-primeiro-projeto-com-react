@@ -353,6 +353,18 @@ $ yarn add axios
      ],
 "camelcase": "off"
 ```
+### Lidando com erros
+- Durante a utilizando de `props` através do `styled`, ocorreram erros com o ESLint, e afim de eliminar o conflito, solucionei o problema alterando uma configuração no arquivo de configuração `settings.json`
+  - Para abrir este arquivo, pressione `CTRL + P` e digite `settings.json`, localize a opção `editor.formatOnSave` e desative. O meu código ficou assim:
+```
+    /*"[typescript]": {
+      "editor.formatOnSave": true
+    },
+    "[javascript]": {
+      "editor.formatOnSave": true
+    },*/
+    "editor.formatOnSave": false,
+```
 ---
 ## Padrões de Projeto
 
