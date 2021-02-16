@@ -365,6 +365,12 @@ $ yarn add axios
     },*/
     "editor.formatOnSave": false,
 ```
+### Navegando entre rotas
+- Abra o arquivo `.eslintrc.json` na raiz do projeto, localize a sessão `rules` e adicione o seguinte trecho de código:
+  - Essa regra foi desabilitado porque estava em conflito com o prettier
+```
+"react/jsx-one-expression-per-line": "off",
+```
 ---
 ## Padrões de Projeto
 
