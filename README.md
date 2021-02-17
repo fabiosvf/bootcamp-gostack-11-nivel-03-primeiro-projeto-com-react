@@ -371,6 +371,57 @@ $ yarn add axios
 ```
 "react/jsx-one-expression-per-line": "off",
 ```
+### Listando issues da API
+- Exemplo 1 - As requisições são executadas simultaneamente
+```ts
+  useEffect(() => {
+    api.get(`repos/${params.repository}`).then(response => {
+      console.log(response.data);
+    });
+    api.get(`repos/${params.repository}/issues`).then(response => {
+      console.log(response.data);
+    });
+  }, [params.repository]);
+```
+- Exemplo 2 - As requisições são executadas sequencialmente, uma após a outra
+```ts
+  useEffect(() => {
+    async function loadData(): Promise<void> {
+      const repository = await api.get(`repos/${params.repository}`);
+      const issues = await api.get(`repos/${params.repository}/issues`);
+      console.log(repository);
+      console.log(issues);
+    }
+    loadData();
+  }, [params.repository]);
+```
+- Exemplo 3 - As requisições são executadas simultaneamente, mas o processo aguarda o término da execução de todas elas
+```ts
+  useEffect(() => {
+    async function loadData(): Promise<void> {
+      const [repository, issues] = await Promise.all([
+        api.get(`repos/${params.repository}`),
+        api.get(`repos/${params.repository}/issues`),
+      ]);
+      console.log(repository);
+      console.log(issues);
+    }
+    loadData();
+  }, [params.repository]);
+```
+- Exemplo 4 - A requisição que tiver o melhor tempo de resposta é retornada
+```ts
+  useEffect(() => {
+    async function loadData(): Promise<void> {
+      const cep = await Promise.race([
+        api.get('cep1'),
+        api.get(`cep2`),
+      ]);
+      console.log(cep);
+    }
+    loadData();
+  }, [params.cep]);
+```
 ---
 ## Padrões de Projeto
 
