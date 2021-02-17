@@ -8,8 +8,13 @@
 - Nesta estapa aprenderemos sobre padronização de projetos React, estrutura de pastas, estilização tanto em ReactJS quanto em React Native, rotas, consumo de APIs externas (neste caso, a API do GitHub) e TypeScript, além de ferramentas como ESLint, Prettier e EditorConfig.
 - Nesse ponto o dev já deve conhecer os conceitos de componentes, estado e propriedades, mas eles serão relembrados durante as aulas.
 
----
+## Protótipo - Github Explorer
 
+|Dashboard|Repository|
+|-|-|
+|![Dashboard](docs/Dashboard.png)|![Repository](docs/Repository.png)|
+
+---
 ## Roteiro
 
 - Nesta seção será descrito o roteiro com todos os passos para criação do projeto em ReactJS com TypeScript
